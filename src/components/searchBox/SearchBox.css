@@ -1,0 +1,32 @@
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.form-field {
+}
+
+.search-box .form-field .search-input {
+  min-width: 300px;
+  width: 60vw;
+  max-width: 600px;
+  padding: 0.8em 0.8em 0.8em 2.5em;
+  border-radius: 10px;
+  border: solid 2px var(--white);
+  outline: none;
+
+  background-color: transparent;
+  color: var(--white);
+
+  text-transform: capitalize;
+}
+.search-box .search-icon {
+  position: relative;
+  right: -1.5em;
+  top: 0.3em;
+}
+.search-box .search-btn {
+  outline: none;
+}
