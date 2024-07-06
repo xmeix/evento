@@ -1,0 +1,39 @@
+.cta {
+  color: var(--black);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(./../../assets/bgCta.png);
+  padding: 3em 4em;
+}
+.cta .cta-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cta .cta-hero {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.cta .cta-hero .cta-text {
+  font-size: 25px;
+  text-transform: capitalize;
+}
+.cta .cta-hero .cta-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1em;
+}
+
+@media screen and (max-width: 900px) {
+  .cta {
+    flex-direction: column;
+    background-color: var(--white);
+    gap: 3em;
+  }
+}
