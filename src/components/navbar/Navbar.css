@@ -1,43 +1,77 @@
 .navbar {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   background-color: transparent;
   position: absolute;
+  top: 1em;
   right: 2em;
   left: 2em;
 }
 
 .navbar .logo {
   font-weight: 900;
+  cursor: pointer;
+  color: var(--white);
 }
 
-.navbar .nav-right {
+.navbar .nav-top {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   gap: 0.5em;
-  list-style: none;
 }
-.navbar .nav-right li {
-  font-size: 15px;
-  text-transform: capitalize;
+.navbar .nav-top .nav-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
 }
-
-.navbar .nav-right .login {
+.navbar .nav-top .login {
   border: solid 1px;
-  padding: 0.3em 1.5em;
+  padding: 0.5em 1.5em;
   border-radius: 5px;
-  border: solid 2px #ea4049;
-  background-color: #ea4049;
+  border: solid 2px var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-size: 13px;
 
-  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.navbar .nav-top .add-log {
+  padding: 0.5em 1.5em;
+  border-radius: 5px;
+  border: solid 2px var(--white);
+  color: var(--white);
+  font-size: 13px;
   font-weight: 600;
   cursor: pointer;
 }
 
-.navbar .nav-right .login:hover {
+.navbar .nav-top .login:hover {
   padding: 0.3em 1.5em;
   border-radius: 5px;
   background-color: var(--primary-color);
+}
+
+.navbar .nav-bottom {
+  list-style: none;
+  margin: 1em 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.navbar .nav-bottom li {
+  background-color: var(--white);
+  opacity: 0.4;
+  color: black;
+  border-radius: 30px;
+  padding: 0.3em 1em;
+  font-size: 15px;
+  cursor: pointer;
 }

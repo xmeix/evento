@@ -5,6 +5,7 @@
   align-items: center;
   background-image: url(./../../assets/bgCta.png);
   padding: 3em 4em;
+  overflow: hidden;
 }
 .cta .cta-img {
   flex: 1;
@@ -28,8 +29,12 @@
   align-items: center;
   justify-content: flex-start;
   gap: 1em;
+  font-size: 13px;
+  white-space: nowrap;
 }
-
+.cta .cta-hero .cta-description {
+  font-size: 15px;
+}
 @media screen and (max-width: 900px) {
   .cta {
     flex-direction: column;
