@@ -1,12 +1,12 @@
 import "./Navbar.css";
 const Navbar = () => {
   const categories = [
-    "workshops",
-    "events",
-    "themed-restaurants",
-    "game-spots",
-    "touristic-spots",
-    "trips",
+    { name: "workshops", href: "/workshops" },
+    { name: "events", href: "/events" },
+    { name: "themed-restaurants", href: "/themed-restaurants" },
+    { name: "game-spots", href: "/game-spots" },
+    { name: "touristic-spots", href: "/touristic-spots" },
+    { name: "trips", href: "/trips" },
   ];
 
   return (
@@ -17,7 +17,7 @@ const Navbar = () => {
         </a>
         <div className="nav-btns">
           <a className="add-log" href="">
-            Add Your Place
+            Add Spot | Event
           </a>
           <a className="login" href="">
             Login
@@ -26,7 +26,9 @@ const Navbar = () => {
       </div>
       <ul className="nav-bottom">
         {categories.map((el, i) => (
-          <li key={i}>{el}</li>
+          <a href={el.href} key={i}>
+            <li>{el.name}</li>
+          </a>
         ))}
       </ul>
     </div>

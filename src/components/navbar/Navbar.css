@@ -49,12 +49,6 @@
   cursor: pointer;
 }
 
-.navbar .nav-top .login:hover {
-  padding: 0.3em 1.5em;
-  border-radius: 5px;
-  background-color: var(--primary-color);
-}
-
 .navbar .nav-bottom {
   list-style: none;
   margin: 1em 0;
@@ -70,8 +64,23 @@
   background-color: var(--white);
   opacity: 0.4;
   color: black;
-  border-radius: 30px;
+  border-radius: 5px;
   padding: 0.3em 1em;
   font-size: 15px;
   cursor: pointer;
+}
+.navbar a:hover {
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 400px) {
+  .navbar .nav-top .add-log {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar .nav-bottom li {
+    font-size: 12px;
+  }
 }

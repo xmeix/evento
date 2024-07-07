@@ -4,9 +4,10 @@
   --primary-font: "Raleway", sans-serif;
   --secondary-font: "Roboto Slab", serif;
 
-  --primary-color: #ea4049;
+  --primary-color: #007bff;
+  --faded-p-color: #007bffc7;
   --white: white;
-  --black: #242424;
+  --black: #333;
 
   line-height: 1.5;
   font-weight: 400;
@@ -19,11 +20,11 @@
 
 a {
   font-weight: 500;
-  color: #ea4049cb;
+  color: var(--faded-p-color);
   text-decoration: inherit;
 }
 a:hover {
-  color: #ea4049;
+  color: var(--primary-color);
 }
 
 body {
@@ -52,4 +53,8 @@ button:hover {
 }
 button:focus,
 button:focus-visible {
+}
+
+.text-color {
+  color: var(--primary-color);
 }

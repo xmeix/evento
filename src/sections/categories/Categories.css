@@ -1,15 +1,14 @@
 .categories {
-  background-color: rgba(0, 0, 0, 0.055);
   color: var(--black);
   overflow: hidden;
   padding: 4em 0;
+  background-image: url(./../../assets/bgCta.png);
 }
 
 .categories .categories-title {
   text-align: center;
   font-size: 50px;
   line-height: 5px;
-  color: var(--primary-color);
 }
 .categories .categories-description {
   font-size: 15px;

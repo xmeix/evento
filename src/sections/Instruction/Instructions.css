@@ -1,0 +1,59 @@
+.instructions {
+  color: var(--black);
+  display: flex;
+
+  justify-content: center;
+  gap: 1em;
+  padding: 40px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.instructions .inst-vid {
+  flex: 1;
+  width: 90%;
+}
+.instructions .inst-desc {
+  flex: 1;
+  padding: 1em;
+}
+
+.inst-title {
+  font-size: 2em;
+  font-weight: 700;
+  color: #333;
+}
+
+.inst-step {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.step-number {
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--primary-color);
+  background-color: #eaf4ff;
+  border-radius: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 20px;
+  height: 20px;
+}
+
+.inst-step p {
+  font-size: 1.1em;
+  color: #555;
+  margin-left: 1em;
+}
+
+@media (max-width: 900px) {
+  .instructions {
+    flex-direction: column-reverse;
+    justify-content: initial;
+    align-items: center;
+  }
+}
