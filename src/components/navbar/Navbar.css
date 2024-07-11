@@ -69,7 +69,7 @@
   font-size: 15px;
   cursor: pointer;
 }
-.navbar a:hover {
+.navbar .nav-bottom a:hover {
   opacity: 0.9;
 }
 

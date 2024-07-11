@@ -9,10 +9,10 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
 import "swiper/css/effect-coverflow";
-import img from "./../../assets/cta/teripark.png";
-import img1 from "./../../assets/cta/Constantine 🇩🇿.jfif";
-import img2 from "./../../assets/cta/iftar.png";
-import img3 from "./../../assets/cta/f00bc063-1b60-46b0-8cca-263ed4a2973e.jfif";
+import img from "./../../assets/images/cta/teripark.png";
+import img1 from "./../../assets/images/cta/Constantine 🇩🇿.jfif";
+import img2 from "./../../assets/images/cta/iftar.png";
+import img3 from "./../../assets/images/cta/f00bc063-1b60-46b0-8cca-263ed4a2973e.jfif";
 
 const categoriesData = [
   { name: "Events", img: img, href: "/events" },

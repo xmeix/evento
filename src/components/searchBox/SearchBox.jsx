@@ -12,7 +12,7 @@ const SearchBox = () => {
           placeholder="Escape Room Algeria"
         />
       </div>
-      <button className="search-btn">Search</button>
+      <a className="search-btn btn">Search</a>
     </div>
   );
 };

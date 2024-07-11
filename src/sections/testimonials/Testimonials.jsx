@@ -1,7 +1,7 @@
 import "./Testimonials.css";
-import img1 from "./../../assets/testimonials/avatar1.png";
-import img2 from "./../../assets/testimonials/avatar2.png";
-import img3 from "./../../assets/testimonials/avatar3.png";
+import img1 from "./../../assets/images/testimonials/avatar1.png";
+import img2 from "./../../assets/images/testimonials/avatar2.png";
+import img3 from "./../../assets/images/testimonials/avatar3.png";
 const Testimonials = () => {
   const testimonials = [
     {
@@ -40,7 +40,7 @@ const Testimonials = () => {
           </div>
         ))}
       </div>
-      <button className="add-testimonial-btn">Add Your Testimonial</button>
+      <a className="add-testimonial-btn btn">Add Your Testimonial</a>
     </div>
   );
 };

@@ -11,7 +11,7 @@
       rgba(0, 0, 0, 0.5),
       rgba(234, 64, 73, 0.129)
     ),
-    url("./../../assets/bg.jpg");
+    url("./../../assets/images/bg.jpg");
   background-size: cover;
 }
 
@@ -45,12 +45,11 @@
   }
 }
 
-
 @media screen and (max-width: 449px) {
   .hero .hero-text {
     font-size: 40px;
   }
   .hero {
-    padding-top: 7em; 
+    padding-top: 7em;
   }
 }

@@ -5,7 +5,8 @@
   --secondary-font: "Roboto Slab", serif;
 
   --primary-color: #007bff;
-  --faded-p-color: #007bffc7;
+  --faded-p-color: #248cfa;
+  --secondary-color: #2c3e50;
   --white: white;
   --black: #333;
 
@@ -39,10 +40,26 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
-
-button {
+.btn-nbg {
+}
+.btn {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  padding: 0.5em 1.5em;
   border-radius: 8px;
-  border: 1px solid transparent;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--faded-p-color);
+  color: var(--white);
+}
+button {
+  border-radius: 5px;
+  border: none;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;

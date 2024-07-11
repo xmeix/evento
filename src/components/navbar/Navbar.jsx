@@ -16,10 +16,10 @@ const Navbar = () => {
           Evento
         </a>
         <div className="nav-btns">
-          <a className="add-log" href="">
+          <a className="add-log btn-nbg" href="">
             Add Spot | Event
           </a>
-          <a className="login" href="">
+          <a className="login btn" href="">
             Login
           </a>
         </div>

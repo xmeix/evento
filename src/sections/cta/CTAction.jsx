@@ -1,5 +1,5 @@
 import "./CTAction.css";
-import img from "./../../assets/cta/cta.png";
+import img from "./../../assets/images/cta/cta.png";
 const CTAction = () => {
   return (
     <div className="cta">

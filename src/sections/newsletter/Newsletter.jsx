@@ -14,11 +14,11 @@ const Newsletter = () => {
             placeholder="Enter your email"
             className="newsletter-input"
           />
-          <button type="submit" className="newsletter-button">
+          <a type="submit" className="newsletter-button btn">
             Subscribe
-          </button>
+          </a>
         </form>
-      </div> 
+      </div>
     </div>
   );
 };
