@@ -1,24 +1,45 @@
 import "./Events.css";
 import Navbar from "../../components/navbar/Navbar";
 import Banner from "../../components/banner/Banner";
-import img from "../../assets/images/other/bg.jpg";
+import img from "../../assets/images/cta/Constantine 🇩🇿.jfif";
+import { events } from "../../assets/data/events";
 import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
+import EventsList from "../../components/eventsList/EventsList";
+
 const Events = () => {
   const { categoryId, subCategoryId } = useParams();
+  const [eventsList, setEventsList] = useState([]);
+
+  useEffect(() => {
+    const getAppropriateArray = () => {
+      if (!categoryId && !subCategoryId) {
+        setEventsList([...events]);
+      } else if (!subCategoryId) {
+        setEventsList(events.filter((event) => event.type === "Activity"));
+      } else {
+        // Filter events by categoryId and subCategoryId
+        setEventsList([...events]);
+      }
+    };
+    getAppropriateArray();
+  }, [categoryId, subCategoryId]);
 
   return (
     <div className="events">
-      <Navbar categoriesBar={false} />
+      <Navbar categoriesBar={false} lightMode={false} />
       {/* 1. background for events */}
-      <Banner text1={"hello"} text2={"its always me"} imgUrl={img} />
-      {!categoryId && !subCategoryId
-        ? "All the offers"
-        : !subCategoryId
-        ? `All Events of category ${categoryId}`
-        : `Events of subcategory ${subCategoryId} of category ${categoryId}`}
-      {/* 2. catgories aside bar */}
-      {/* 3. search and filter parameters */}
-      {/* 3. display all events + empty */}
+      <Banner
+        text1={"all events"}
+        imgUrl={
+          "linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5),rgba(234, 64, 73, 0.129)),url(" +
+          img +
+          ")"
+        }
+        height="40vh"
+      />
+
+      <EventsList events={eventsList} />
     </div>
   );
 };

@@ -5,6 +5,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 1em 2em;
+  margin-top: 5em;
+  border-radius: 20px;
 }
 .banner .banner-text {
   font-size: 80px;

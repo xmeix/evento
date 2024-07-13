@@ -16,15 +16,15 @@ import img3 from "./../../assets/images/cta/f00bc063-1b60-46b0-8cca-263ed4a2973e
 import { NavLink } from "react-router-dom";
 
 const categoriesData = [
-  { name: "Workshops", img: img, href: "/events/cat/1" },
-  { name: "Activities", img: img1, href: "/events/cat/2" },
-  { name: "Trips", img: img2, href: "/events/cat/3" },
-  { name: "Events", img: img3, href: "/events/cat/4" },
-  { name: "Plogging", img: img3, href: "/events/cat/1/1" },
-  { name: "themed Restaurant", img: img3, href: "/events/cat/2/1" },
-  { name: "Gameplace", img: img3, href: "/events/cat/2/2" },
-  { name: "Hiking", img: img3, href: "/events/cat/3/1" },
-  { name: "Concert", img: img3, href: "/events/cat/4/1" },
+  { name: "Workshops", img: img, href: "/events/1" },
+  { name: "Activities", img: img1, href: "/events/2" },
+  { name: "Trips", img: img2, href: "/events/3" },
+  { name: "Events", img: img3, href: "/events/4" },
+  { name: "Plogging", img: img3, href: "/events/1/1" },
+  { name: "themed Restaurant", img: img3, href: "/events/2/1" },
+  { name: "Gameplace", img: img3, href: "/events/2/2" },
+  { name: "Hiking", img: img3, href: "/events/3/1" },
+  { name: "Concert", img: img3, href: "/events/4/1" },
 ];
 const Categories = () => {
   return (

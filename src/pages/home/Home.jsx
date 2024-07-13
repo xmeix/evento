@@ -11,7 +11,7 @@ import "./Home.css";
 const Home = () => {
   return (
     <div className="home">
-      <Navbar categoriesBar={true} />
+      <Navbar categoriesBar={true} lightMode={true} />
       <Hero />
       {/* Call to Login*/}
       <CTAction />

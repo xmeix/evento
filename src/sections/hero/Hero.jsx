@@ -5,7 +5,7 @@ import "./Hero.css";
 const Hero = () => {
   return (
     <div className="hero">
-      <Banner text1={"Explore &"} text2={"Have Fun!"} />
+      <Banner text1={"Give it a Try"} text2={""} />
       <SearchBox />
     </div>
   );

@@ -19,6 +19,7 @@ import image19 from "./imgs/image19.png";
 
 export const events = [
   {
+    id:"1",
     type: "Workshop",
     subCategory: "Plogging",
     name: "Beach Cleanup",
@@ -61,7 +62,8 @@ export const events = [
     socialMediaLinks: [],
     isParking: true,
   },
-  {
+  {    
+    id:"2",
     type: "Activity",
     subCategory: "Themed Resto",
     name: "Medieval Feast",
@@ -106,6 +108,7 @@ export const events = [
     isParking: false,
   },
   {
+    id:"3",
     type: "Activity",
     subCategory: "Gameplace",
     name: "Escape Room Challenge",
@@ -150,6 +153,7 @@ export const events = [
     isParking: true,
   },
   {
+    id:"4",
     type: "Event",
     subCategory: "Concert",
     name: "Rock Concert",
@@ -194,6 +198,7 @@ export const events = [
     isParking: true,
   },
   {
+    id:"5",
     type: "Trip",
     subCategory: "Other",
     name: "Desert Safari",
@@ -240,6 +245,7 @@ export const events = [
   },
 
   {
+    id:"6",
     type: "Workshop",
     subCategory: "Other",
     name: "Pottery Class",
@@ -284,6 +290,7 @@ export const events = [
     isParking: true,
   },
   {
+    id:"7",
     type: "Activity",
     subCategory: "Karaoke",
     name: "Karaoke Night",
@@ -327,6 +334,7 @@ export const events = [
     isParking: true,
   },
   {
+    id:"8",
     type: "Event",
     subCategory: "Other",
     name: "Book Fair",
@@ -370,6 +378,7 @@ export const events = [
     isParking: true,
   },
   {
+    id:"9",
     type: "Trip",
     subCategory: "Other",
     name: "Mountain Hiking",
@@ -414,6 +423,7 @@ export const events = [
     isParking: false,
   },
   {
+    id:"10",
     type: "Activity",
     subCategory: "Cinema",
     name: "Outdoor Movie Night",
@@ -458,6 +468,7 @@ export const events = [
   },
 
   {
+    id:"11",
     type: "Workshop",
     subCategory: "Other",
     name: "Pottery Class",
@@ -502,6 +513,7 @@ export const events = [
     isParking: true,
   },
   {
+    id:"12",
     type: "Activity",
     subCategory: "Karaoke",
     name: "Karaoke Night",
@@ -545,6 +557,7 @@ export const events = [
     isParking: true,
   },
   {
+    id:"13",
     type: "Event",
     subCategory: "Other",
     name: "Book Fair",
@@ -588,6 +601,7 @@ export const events = [
     isParking: true,
   },
   {
+    id:"14",
     type: "Trip",
     subCategory: "Other",
     name: "Mountain Hiking",
@@ -632,6 +646,7 @@ export const events = [
     isParking: false,
   },
   {
+    id:"15",
     type: "Activity",
     subCategory: "Cinema",
     name: "Outdoor Movie Night",
@@ -675,6 +690,7 @@ export const events = [
     isParking: true,
   },
   {
+    id:"16",
     type: "Workshop",
     subCategory: "Plogging",
     name: "City Park Cleanup",
@@ -718,6 +734,7 @@ export const events = [
     isParking: true,
   },
   {
+    id:"17",
     type: "Activity",
     subCategory: "Themed Resto",
     name: "Pirate Dinner",
@@ -762,6 +779,7 @@ export const events = [
     isParking: true,
   },
   {
+    id:"18",
     type: "Activity",
     subCategory: "Gameplace",
     name: "Board Game Night",
@@ -805,6 +823,7 @@ export const events = [
     isParking: true,
   },
   {
+    id:"19",
     type: "Event",
     subCategory: "Concert",
     name: "Jazz Festival",
@@ -849,6 +868,7 @@ export const events = [
     isParking: true,
   },
   {
+    id:"20",
     type: "Trip",
     subCategory: "Other",
     name: "Cultural Heritage Tour",
@@ -893,6 +913,7 @@ export const events = [
     isParking: false,
   },
   {
+    id:"21",
     type: "Workshop",
     subCategory: "Other",
     name: "Photography Basics",
