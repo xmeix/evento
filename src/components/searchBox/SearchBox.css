@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   gap: 1em;
-
+  color: var(--white);
   margin-top: -1em;
 }
 
@@ -32,4 +32,3 @@
   right: -1.5em;
   top: 0.3em;
 }
- 

@@ -1,4 +1,5 @@
 import Footer from "../../components/footer/Footer";
+import Navbar from "../../components/navbar/Navbar";
 import Categories from "../../sections/categories/Categories";
 import CTAction from "../../sections/cta/CTAction";
 import Hero from "../../sections/hero/Hero";
@@ -10,6 +11,7 @@ import "./Home.css";
 const Home = () => {
   return (
     <div className="home">
+      <Navbar categoriesBar={true} />
       <Hero />
       {/* Call to Login*/}
       <CTAction />

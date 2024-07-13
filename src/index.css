@@ -18,7 +18,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 a {
   font-weight: 500;
   color: var(--faded-p-color);
@@ -33,7 +37,6 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: var(--primary-font);
-  color: var(--white);
 }
 
 h1 {
@@ -74,4 +77,11 @@ button:focus-visible {
 
 .text-color {
   color: var(--primary-color);
+}
+.section-title {
+  font-size: 2em;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  padding-bottom: 0.5em;
 }

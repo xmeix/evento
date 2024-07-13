@@ -1,5 +1,6 @@
+import SearchBox from "../../components/searchBox/SearchBox";
 import "./Search.css";
-const SearchBox = () => {
+const Search = () => {
   return (
     <div className="search-section">
         search
@@ -8,4 +9,4 @@ const SearchBox = () => {
   );
 };
 
-export default SearchBox;
+export default Search;

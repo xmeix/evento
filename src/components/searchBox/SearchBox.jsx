@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import "./SearchBox.css";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 
@@ -12,7 +13,9 @@ const SearchBox = () => {
           placeholder="Escape Room Algeria"
         />
       </div>
-      <a className="search-btn btn">Search</a>
+      <NavLink className="search-btn btn" to="/">
+        Search
+      </NavLink>
     </div>
   );
 };

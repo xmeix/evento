@@ -4,9 +4,9 @@
   justify-content: center;
   background-color: transparent;
   position: absolute;
-  top: 1em;
-  right: 2em;
-  left: 2em;
+  top: 2em;
+  right: 2.5em;
+  left: 2.5em;
 }
 
 .navbar .logo {

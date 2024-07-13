@@ -14,13 +14,20 @@
 }
 .instructions .inst-desc {
   flex: 1;
-  padding: 1em;
 }
 
 .inst-title {
   font-size: 2em;
   font-weight: 700;
+  padding-bottom: 0.5em;
   color: #333;
+}
+.inst-steps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+  padding: 1em 2em;
 }
 
 .inst-step {

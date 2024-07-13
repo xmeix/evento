@@ -8,7 +8,7 @@
 .categories .categories-title {
   text-align: center;
   font-size: 50px;
-  line-height: 5px;
+  padding: 0.5em;
 }
 .categories .categories-description {
   font-size: 15px;

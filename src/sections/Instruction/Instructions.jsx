@@ -7,7 +7,7 @@ const Instructions = () => {
       </video>
 
       <div className="inst-desc">
-        <p className="inst-title">How to Add an Event on Our Platform</p>
+        <p className="section-title">How to Add an Event on Our Platform</p>
         <div className="inst-steps">
           <div className="inst-step">
             <span className="step-number">1</span>

@@ -3,53 +3,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  margin: 1em;
+  border-radius: 20px;
   padding: 10em 0 5em 0;
-  width: 100%;
+
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5),
       rgba(234, 64, 73, 0.129)
     ),
-    url("./../../assets/images/bg.jpg");
+    url("./../../assets/images/other/bg.jpg");
   background-size: cover;
-}
-
-.hero .hero-text {
-  font-size: 80px;
-  font-weight: 800;
-  transition: all 0.5s ease-in;
-}
-.hero .hero-text:nth-child(1) {
-  margin-top: 2em;
-}
-
-.hero .hero-container {
-  line-height: 20px;
-}
-.hero .hero-container .hero-text:nth-child(2) {
-  margin-left: 2em !important;
-}
-
-@media screen and (min-width: 900px) {
-  .hero .hero-text {
-    font-size: 100px;
-  }
-  .hero .hero-text:nth-child(1) {
-    margin-top: 0;
-  }
-}
-@media screen and (min-width: 450px) and (max-width: 700px) {
-  .hero .hero-text {
-    font-size: 60px;
-  }
-}
-
-@media screen and (max-width: 449px) {
-  .hero .hero-text {
-    font-size: 40px;
-  }
-  .hero {
-    padding-top: 7em;
-  }
 }

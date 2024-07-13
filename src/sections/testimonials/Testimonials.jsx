@@ -2,6 +2,7 @@ import "./Testimonials.css";
 import img1 from "./../../assets/images/testimonials/avatar1.png";
 import img2 from "./../../assets/images/testimonials/avatar2.png";
 import img3 from "./../../assets/images/testimonials/avatar3.png";
+import { NavLink } from "react-router-dom";
 const Testimonials = () => {
   const testimonials = [
     {
@@ -23,7 +24,7 @@ const Testimonials = () => {
 
   return (
     <div className="testimonials">
-      <h2 className="testimonials-title">What Our Users Say</h2>
+      <h2 className="section-title">What Our Users Say</h2>
       <div className="testimonials-intro">
         We value our users feedback. Here are some of their experiences.
       </div>
@@ -40,7 +41,9 @@ const Testimonials = () => {
           </div>
         ))}
       </div>
-      <a className="add-testimonial-btn btn">Add Your Testimonial</a>
+      <NavLink to="/" className="add-testimonial-btn btn">
+        Add Your Testimonial
+      </NavLink>
     </div>
   );
 };

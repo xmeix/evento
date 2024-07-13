@@ -1,23 +1,24 @@
+import { NavLink } from "react-router-dom";
 import "./Newsletter.css";
 
 const Newsletter = () => {
   return (
     <div className="newsletter">
       <div className="newsletter-signup">
-        <h3 className="newsletter-title">Subscribe to Our Newsletter</h3>
+        <h3 className="section-title">Subscribe to Our Newsletter</h3>
         <p className="newsletter-intro">
           Get the latest updates and offers directly in your inbox.
         </p>
-        <form className="newsletter-form">
+        <div className="newsletter-form">
           <input
             type="email"
             placeholder="Enter your email"
             className="newsletter-input"
           />
-          <a type="submit" className="newsletter-button btn">
+          <NavLink type="submit" className="newsletter-button btn" to="/">
             Subscribe
-          </a>
-        </form>
+          </NavLink>
+        </div>
       </div>
     </div>
   );

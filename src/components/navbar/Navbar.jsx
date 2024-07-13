@@ -1,38 +1,45 @@
 import "./Navbar.css";
-const Navbar = () => {
+import Proptypes from "prop-types";
+import { NavLink } from "react-router-dom";
+
+const Navbar = ({ categoriesBar }) => {
   const categories = [
-    { name: "workshops", href: "/workshops" },
-    { name: "events", href: "/events" },
-    { name: "themed-restaurants", href: "/themed-restaurants" },
-    { name: "game-spots", href: "/game-spots" },
-    { name: "touristic-spots", href: "/touristic-spots" },
-    { name: "trips", href: "/trips" },
+    { name: "Workshops", href: "/events/1" },
+    { name: "Activities", href: "/events/2" },
+    { name: "Trips", href: "/events/3" },
+    { name: "Events", href: "/events/4" },
+    { name: "all offers", href: "/events/" },
   ];
 
   return (
     <div className="navbar">
       <div className="nav-top">
-        <a className="logo" href="">
+        <NavLink className="logo" to="/">
           Evento
-        </a>
+        </NavLink>
         <div className="nav-btns">
-          <a className="add-log btn-nbg" href="">
+          <NavLink className="add-log btn-nbg" to="/add-event">
             Add Spot | Event
-          </a>
-          <a className="login btn" href="">
+          </NavLink>
+          <NavLink className="login btn" to="/login">
             Login
-          </a>
+          </NavLink>
         </div>
       </div>
-      <ul className="nav-bottom">
-        {categories.map((el, i) => (
-          <a href={el.href} key={i}>
-            <li>{el.name}</li>
-          </a>
-        ))}
-      </ul>
+      {categoriesBar && (
+        <ul className="nav-bottom">
+          {categories.map((el, i) => (
+            <NavLink to={el.href} key={i}>
+              <li>{el.name}</li>
+            </NavLink>
+          ))}
+        </ul>
+      )}
     </div>
   );
 };
 
+Navbar.propTypes = {
+  categoriesBar: Proptypes.bool,
+};
 export default Navbar;

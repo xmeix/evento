@@ -16,12 +16,6 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.newsletter-title {
-  font-size: 1.8em;
-  font-weight: 600;
-  color: var(--black);
-}
-
 .newsletter-intro {
   font-size: 1em;
   margin-bottom: 20px;
@@ -41,5 +35,3 @@
   border: 1px solid #ddd;
   border-radius: 4px;
 }
- 
- 
