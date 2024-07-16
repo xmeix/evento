@@ -30,13 +30,13 @@ const Events = () => {
       <Navbar categoriesBar={false} lightMode={false} />
       {/* 1. background for events */}
       <Banner
-        text1={"all events"}
+        text2={"all events"}
         imgUrl={
           "linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5),rgba(234, 64, 73, 0.129)),url(" +
           img +
           ")"
         }
-        height="40vh"
+        height="20vh"
       />
 
       <EventsList events={eventsList} />

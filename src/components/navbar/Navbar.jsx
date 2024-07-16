@@ -15,19 +15,32 @@ const Navbar = ({ categoriesBar, lightMode }) => {
     <div
       className="navbar"
       style={{
-        backgroundColor: lightMode ? "" : "var(--black)",
-        padding: lightMode ? "" : "0.5em 2em",
+        padding: lightMode ? "" : "0.8em 3em",
         top: lightMode ? "" : "0",
         right: lightMode ? "" : "0",
         left: lightMode ? "" : "0",
+        boxShadow: lightMode ? "" : "0 0 0 1px rgba(0,0,0,0.4)",
       }}
     >
-      <div className="nav-top">
-        <NavLink className="logo" to="/">
+      <div className="nav-top" style={{}}>
+        <NavLink
+          className="logo"
+          to="/"
+          style={{
+            color: lightMode ? "" : "var(--black)",
+          }}
+        >
           Evento
         </NavLink>
         <div className="nav-btns">
-          <NavLink className="add-log btn-nbg" to="/add-event">
+          <NavLink
+            className="add-log btn-nbg"
+            to="/add-event"
+            style={{
+              color: lightMode ? "" : "var(--black)",
+              border: lightMode ? "" : "solid 2.5px var(--black)",
+            }}
+          >
             Add Spot | Event
           </NavLink>
           <NavLink className="login btn" to="/login">

@@ -7,9 +7,15 @@ import { useState } from "react";
 const EventItem = ({ item }) => {
   const { id, name, description, images, isOnline, price } = item;
   const [isFavourite, setIsFavourite] = useState(false);
+
+  const handleIconClick = (e) => {
+    e.stopPropagation();
+    setIsFavourite(!isFavourite);
+  };
+
   return (
-    <NavLink className="event-item" to={`/event/${id}`}>
-      <div className="event-content">
+    <div className="event-item">
+      <NavLink className="event-content" to={`/event/${id}`}>
         <img className="event-img" src={images[0]} alt="" />
         <div className="event-item-info-wrapper">
           <div className="event-item-top">
@@ -21,19 +27,22 @@ const EventItem = ({ item }) => {
           <div className="event-description">{description}</div>
           <div className="event-price">{price == 0 ? "free" : price}</div>
         </div>
-      </div>
-      <div className="event-icon">
+      </NavLink>
+      <div onClick={handleIconClick}>
         {isFavourite ? (
-          <FavoriteRoundedIcon onClick={() => setIsFavourite(false)} />
+          <FavoriteRoundedIcon
+            className="event-icon"
+            style={{ color: "var(--red)" }}
+          />
         ) : (
-          <FavoriteBorderRoundedIcon onClick={() => setIsFavourite(true)} />
+          <FavoriteBorderRoundedIcon className="event-icon" />
         )}
       </div>
-    </NavLink>
+    </div>
   );
 };
 
 EventItem.propTypes = {
-  item: Proptypes.object,
+  item: Proptypes.object.isRequired,
 };
 export default EventItem;
