@@ -1,0 +1,7 @@
+.events{
+    margin-top: 4em;
+}
+
+.events .events-filter-container{
+    display: flex;
+}

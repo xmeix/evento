@@ -15,11 +15,14 @@ const Navbar = ({ categoriesBar, lightMode }) => {
     <div
       className="navbar"
       style={{
-        padding: lightMode ? "" : "0.8em 3em",
+        padding: lightMode ? "" : "0.5em 3em",
         top: lightMode ? "" : "0",
         right: lightMode ? "" : "0",
         left: lightMode ? "" : "0",
-        boxShadow: lightMode ? "" : "0 0 0 1px rgba(0,0,0,0.4)",
+        boxShadow: lightMode ? "" : "var(--box-shadow)",
+        position: lightMode ? "" : "fixed",
+        zIndex: lightMode ? "": "999",
+        backgroundColor: lightMode? "": "var(--white)"
       }}
     >
       <div className="nav-top" style={{}}>

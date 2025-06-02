@@ -1,0 +1,13 @@
+.asideFilterBox{
+    position: fixed;
+    left: 0;
+    top: 3.4em;
+    bottom: 0; 
+    z-index: 1;
+     
+    height: 100%;
+    width: 350px;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    
+}

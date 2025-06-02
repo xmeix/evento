@@ -1,0 +1,36 @@
+.topFilterBox{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2em 1em 1em  1em;
+ 
+}
+
+.topFilterBox .topFilterItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5em;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.topFilterBox .topFilterItem .topFilterItemText{
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+select {
+    padding: 5px 10px;
+    font-size: 15px;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+select:focus {
+    border-color: var(--primary-color);
+}

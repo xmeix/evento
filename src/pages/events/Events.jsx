@@ -1,12 +1,11 @@
 import "./Events.css";
 import Navbar from "../../components/navbar/Navbar";
-import Banner from "../../components/banner/Banner";
-import img from "../../assets/images/cta/Constantine 🇩🇿.jfif";
 import { events } from "../../assets/data/events";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import EventsList from "../../components/eventsList/EventsList";
-
+import TopFilterBox from "../../components/topFilterBox/TopFilterBox";
+ 
 const Events = () => {
   const { categoryId, subCategoryId } = useParams();
   const [eventsList, setEventsList] = useState([]);
@@ -28,18 +27,11 @@ const Events = () => {
   return (
     <div className="events">
       <Navbar categoriesBar={false} lightMode={false} />
-      {/* 1. background for events */}
-      <Banner
-        text2={"all events"}
-        imgUrl={
-          "linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5),rgba(234, 64, 73, 0.129)),url(" +
-          img +
-          ")"
-        }
-        height="20vh"
-      />
-
-      <EventsList events={eventsList} />
+      <TopFilterBox/>
+      <div className="events-filter-container">
+        
+        <EventsList events={eventsList} />
+      </div>
     </div>
   );
 };
